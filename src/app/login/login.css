@@ -1,0 +1,17 @@
+:host {
+    display: block;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a002b 0%, #4a0e6b 30%, #7b2d8e 60%, #c084fc 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+:host::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 20% 50%, rgba(192, 132, 252, 0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 80%, rgba(236, 72, 153, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
